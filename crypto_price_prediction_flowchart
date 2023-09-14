@@ -1,0 +1,19 @@
+digraph Crypto_Price_Prediction {
+	A [label="Data Collection"]
+	B [label="Data Preprocessing"]
+	C [label="Feature Engineering"]
+	D [label="Model Selection"]
+	E [label="Model Training"]
+	F [label="Model Evaluation"]
+	G [label=Prediction]
+	H [label="Model Deployment"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	G -> D
+	F -> H
+	rankdir=LR
+	splines=ortho
+}
